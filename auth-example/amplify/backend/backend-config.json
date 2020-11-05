@@ -1,0 +1,8 @@
+{
+	"auth": {
+		"authexamplec2ccdc28": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

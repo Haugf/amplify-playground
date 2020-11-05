@@ -1,0 +1,68 @@
+{
+    "identityPoolName": "authexample54eb7612_identitypool_54eb7612",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "authex_54eb7612_lambda_log_policy",
+    "openIdLambdaRoleName": "authex_54eb7612_openid_lambda_role",
+    "openIdRolePolicy": "authex_54eb7612_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "authex_54eb7612_openid_lambda_iam_policy",
+    "openIdLogPolicy": "authex_54eb7612_openid_lambda_log_policy",
+    "userPoolName": "authexample54eb7612_userpool_54eb7612",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "authex54eb7612_sns-role",
+    "roleExternalId": "authex54eb7612_role_external_id",
+    "policyName": "authex54eb7612-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "authex54eb7612_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "authex54eb7612_totp_lambda_role",
+    "mfaLambdaLogPolicy": "authex54eb7612_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "authex54eb7612_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "authex54eb7612_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "authex54eb7612_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "authex54eb7612_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "authex54eb7612_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "authexample54eb7612",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default"
+}
