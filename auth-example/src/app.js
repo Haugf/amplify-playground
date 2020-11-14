@@ -28,7 +28,7 @@ async function signUp() {
 
 async function confirmSignUp(){
     try {
-        await Auth.confirmSignUp("haugf6", "421526")
+        await Auth.confirmSignUp("FreddyHaug", "714032")
         console.log(user);
     } catch (error) {
         console.log('error signing up:', error);
